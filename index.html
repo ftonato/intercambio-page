@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Organizando o Intercâmbio</title>
+	<meta name="author" content="Ademílson F. Tonato" />
+	<meta name="description" content="Projeto criado com intuito de organizar o intercâmbio." />
+	<meta name="keywords"  content="intercambio, irlanda, canada, organizar" />
+
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="jquery-fullpage.min.css">
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	
+	<!--[if IE]>
+	<script type="text/javascript">
+		 var console = { log: function() {} };
+	</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="jquery-fullpage.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+</head>
+<body>
+
+	<div id="fullpage">
+		<div class="section " id="section0">
+			<div class="intro">
+				<h1>Abstract</h1>
+				<p>Se você chegou até essa página, provavelmente você deve ter recebido um e-mail meu, sobre meu interesse em fazer intercâmbio para o Canadá ou para a Irlanda, certo?</p>
+				<p>Se sim, continue lendo, caso contrário, você pode me contar como chegou até aqui e para isso, podes utilizar o <a href="http://www.twitter.com/ftonato" target="_blank">Twitter</a> &lt;3</p>
+			</div>
+		</div>
+		<div class="section" id="section1">
+			<div class="intro">
+				<h1>Destino(s)</h1>
+				<p>Tenho dois lugares em mente p/ o intercâmbio, o primeiro deles, é meu sonho, o <a href="#modal-one" onclick="openModal(this);" data-id="canada" data-title="Canadá">Canadá</a> e por último, mas não menos importante, a tão amada <a href="#modal-one" onclick="openModal(this);" data-id="irlanda" data-title="Irlanda">Irlanda</a>.</p>
+				<p>Para mim, independe de qual eu for primeiro, desde que algum dia eu vá!</p>
+			</div>
+		</div>
+		<div class="section" id="section2">
+			<div class="intro">
+				<h1>Planos de viagem</h1>
+				<p>Algumas informações importantes sobre, quando eu pretendo ir, quanto tempo espero ficar, além do clássico estudo e se possível, o trabalho! Tudo isso, você confere <a href="#modal-one" onclick="openModal(this);" data-id="outros" data-title="Quando? Duração? Estudar e/ou trabalhar?">here</a>.</p>
+			</div>
+		</div>
+		<div class="section" id="section3">
+			<div class="intro">
+				<h1>Informações Complementares</h1>
+				<p>O complemento mais importante é, "eu desejo ficar hospedado em uma casa/apartamento de nativos"!</p>
+				<p>Você pode entrar em contato comigo por e-mail, que já deve ter ;)</p>
+				<p>E se não tiver, você pode me encontrar no <a href="http://www.twitter.com/ftonato" target="_blank">Twitter</a></p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal" id="modal-one" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-header">
+				<h2 id="modal-title"><!-- Dynamic Title --></h2>
+				<a href="#" class="btn-close" aria-hidden="true">×</a>
+			</div>
+			<div id="modal-body" class="modal-body">
+				<!-- Dynamic Content -->
+			</div>
+			<div class="modal-footer">
+				<a href="#" class="btn">Right?</a>
+			</div>
+		</div>
+	</div>
+	<!-- /Modal -->
+</body>
+</html>
